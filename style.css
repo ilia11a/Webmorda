@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald:400,700');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+}
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #434750;
+}
+.leftul
+{
+    position: relative;
+    transform: skewY(-15deg);
+}
+.leftul li
+{
+    position: relative;
+    list-style: none;
+    width: 200px;
+    background: #3e3f46;
+    padding: 15px;
+    z-index: var(--i);
+    transition: 0.5s;
+}
+.leftul li:hover
+{
+    background: #33a3ee;
+    transform: translateX(-50px);
+}
+.leftul li::before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -40px;
+    width: 40px;
+    height: 100%;
+    background: #2e3133;
+    transform-origin: right;
+    transform: skewY(45deg);
+    transition: 0.5s;
+}
+.leftul li:hover::before
+{
+    background: #1f5378;
+}
+.leftul li::after
+{
+    content: '';
+    position: absolute;
+    top: -40px;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    background: #35383e;
+    transform-origin: bottom;
+    transform: skewX(45deg);
+    transition: 0.5s;
+}
+.leftul li:hover::after
+{
+    background: #2982b9;
+}
+.leftul li a
+{
+    text-decoration: none;
+    color: #999;
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+}
+.leftul li:hover a
+{
+    color: #fff;
+
+}
+.rightul
+{
+    position: relative;
+    transform: skewY(15deg);
+}
+.rightul li
+{
+    position: relative;
+    list-style: none;
+    width: 200px;
+    background: #3e3f46;
+    padding: 15px;
+    z-index: var(--i);
+    transition: 0.5s;
+}
+.rightul li:hover
+{
+    background: #33a3ee;
+    transform: translateX(50px);
+}
+.rightul li::before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -40px;
+    width: 40px;
+    height: 100%;
+    background: #2e3133;
+    transform-origin: left;
+    transform: skewY(-45deg);
+    transition: 0.5s;
+}
+.rightul li:hover::before
+{
+    background: #1f5378;
+}
+.rightul li::after
+{
+    content: '';
+    position: absolute;
+    top: -40px;
+    right: 0;
+    width: 100%;
+    height: 40px;
+    background: #35383e;
+    transform-origin: bottom;
+    transform: skewX(-45deg);
+    transition: 0.5s;
+}
+.rightul li:hover::after
+{
+    background: #2982b9;
+}
+.rightul li a
+{
+    text-decoration: none;
+    color: #999;
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+}
+.rightul li:hover a
+{
+    color: #fff;
+
+}
+div
+{
+    padding: 10px;
+}
